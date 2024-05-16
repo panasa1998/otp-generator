@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let div1=document.createElement("div")
+        let h11=document.createElement('h1');
+        div1.style.border="1px solid none"
+        div1.style.height="300px"
+        div1.style.width="250px"
+        div1.style.backgroundColor="aqua"
+        div1.style.display="grid"
+        div1.style.alignItems="center"
+        div1.style.justifyContent="center"
+        div1.style.borderRadius="30px"
+        div1.style.backgroundImage='url(sea-bg.jpg)'
+        div1.style.marginLeft="600px"
+        div1.style.marginTop="200px"
+        document.body.appendChild(div1)
+        div1.appendChild(h11)
+        let btn=document.createElement("button")
+        btn.innerHTML="otp generator"
+        
+        btn.addEventListener("click",()=>{
+            h11.getElementsByTagName('h1')[0];
+             otp=Math.floor(Math.random()*1000000)
+            h11.innerHTML=otp;
+            
+             
+        
+        })
+        div1.appendChild(btn)
+
+
+        
+
+
+
+    </script>
+
+
+    
+</body>
+</html>
